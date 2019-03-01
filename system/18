@@ -1,0 +1,20 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    18                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: ikourkji <ikourkji@student.42.us.or>       +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/03/01 00:56:26 by ikourkji          #+#    #+#              #
+#    Updated: 2019/03/01 01:00:26 by ikourkji         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+
+#I assume they mean processes, ie sshd; you can stop your server with
+#service ssh stop
+#(as root) but it's not a kill. It's the connections that are the processes.
+#This will kill all of the ones that you have access to; as a regular user,
+#that should be just you
+killall sshd 

@@ -1,0 +1,21 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    22                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: ikourkji <ikourkji@student.42.us.or>       +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/03/01 01:26:02 by ikourkji          #+#    #+#              #
+#    Updated: 2019/03/01 01:50:56 by ikourkji         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+
+#as root
+adduser newuser
+#works on debian, use useradd -m (creates home) newuser for lower level/
+#mulitple distro compatibility
+#(also fewer options, adduser wants
+#name, pass, Full Name, Room Number, Work Phone, Home Phone, and Other
+#...which is too many options for init imho)

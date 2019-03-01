@@ -1,0 +1,17 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    21                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: ikourkji <ikourkji@student.42.us.or>       +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/03/01 01:21:18 by ikourkji          #+#    #+#              #
+#    Updated: 2019/03/01 01:25:18 by ikourkji         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+
+#see prev note
+#assumes real users have a directory in home
+cat /etc/passwd | awk 'BEGIN{FS = ":"} ; (index($(NF-1), "/home/") != 0) {print $1}'

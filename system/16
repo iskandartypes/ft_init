@@ -1,0 +1,26 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    16                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: ikourkji <ikourkji@student.42.us.or>       +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/02/28 22:11:43 by ikourkji          #+#    #+#              #
+#    Updated: 2019/02/28 22:37:32 by ikourkji         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#I presume this isn't an executable because it isn't in the bundled distro for
+#debian, but you'd want to use (in order to not do a weird thing like 
+nohup bash -c "sleep 28800 ; ./myscript.sh" &
+#which means:
+#nohup: ignore SIGHUP for this, which means don't kill this process as it chills
+#bash -c: call bash with commands from the following string
+#" ": sleep for (whatever amount of time) , call my command after that
+#& : and of course (rimshot) run this process in the background
+#) at. So, install at (using as root (install sudo while you're at it)
+apt-get install at
+#and then it takes neat human-readable input like
+at now +8 hours -f ./myscript.sh
+#these answers are derived from
+#https://askubuntu.com/questions/339298/conveniently-schedule-a-command-to-run-later

@@ -1,0 +1,18 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    23                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: ikourkji <ikourkji@student.42.us.or>       +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/03/01 01:43:45 by ikourkji          #+#    #+#              #
+#    Updated: 2019/03/01 01:49:22 by ikourkji         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#I don't really know what this means. How to log in? Just give your username
+#and pass at boot/ssh connection period, or, to switch users in terminal, use
+su <username>
+#for gui: presumably, click on "switch user" in any given GUI
+#it seems overkill to list all possible places all the different GUIs might
+#place that

@@ -1,0 +1,16 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    24                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: ikourkji <ikourkji@student.42.us.or>       +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/03/01 01:39:10 by ikourkji          #+#    #+#              #
+#    Updated: 2019/03/01 01:40:04 by ikourkji         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+
+dpkg --get-selections | awk'{print $1}'
+#dpkg -l also does this, but the format is a little different (can just awk $2)

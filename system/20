@@ -1,0 +1,16 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    20                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: ikourkji <ikourkji@student.42.us.or>       +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/03/01 01:20:19 by ikourkji          #+#    #+#              #
+#    Updated: 2019/03/01 01:23:54 by ikourkji         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+
+#without BEGIN skips first line bc awk reads first record and then performs ops
+cat /etc/passwd | awk 'BEGIN{FS = ":"} ; {print $1}'
