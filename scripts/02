@@ -6,14 +6,17 @@
 #    By: ikourkji <ikourkji@student.42.us.or>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/03/01 02:09:05 by ikourkji          #+#    #+#              #
-#    Updated: 2019/03/01 02:54:24 by ikourkji         ###   ########.fr        #
+#    Updated: 2019/03/01 03:11:55 by ikourkji         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 #!/bin/bash
 
 read -p "User to delete: " user
-killall -u $user
+for pid in `ps -u "$user" -o pid | tail -n +2`
+	do
+		kill -KILL $pid
+	done
 #as with adduser/useradd, deluser is a perl script on debian that wraps userdel
 #use userdel for cross-distro compatibility/less options like
 #`userdel -rf $user`
