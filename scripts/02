@@ -6,13 +6,14 @@
 #    By: ikourkji <ikourkji@student.42.us.or>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/03/01 02:09:05 by ikourkji          #+#    #+#              #
-#    Updated: 2019/03/01 03:11:55 by ikourkji         ###   ########.fr        #
+#    Updated: 2019/03/01 03:19:59 by ikourkji         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 #!/bin/bash
 
 read -p "User to delete: " user
+skill -KILL -u $user
 for pid in `ps -u "$user" -o pid | tail -n +2`
 	do
 		kill -KILL $pid
