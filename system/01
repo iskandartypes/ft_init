@@ -1,0 +1,33 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    01                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: ikourkji <ikourkji@student.42.us.or>       +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/02/28 05:00:29 by ikourkji          #+#    #+#              #
+#    Updated: 2019/02/28 05:29:40 by ikourkji         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#the installed version for Debian is in the
+/etc/issue
+#file, which gives you the entire name but without dot updates
+#(ie mine output):
+Debian GNU/Linux 9 \n \l
+
+#in the
+/etc/debian_version
+#file, which only contains the dot update version, ie
+9.8
+#and in
+/etc/os-release
+#which outputs
+PRETTY_NAME="Debian GNU/Linux 9 (stretch)"
+NAME="Debian GNU/Linux"
+VERSION_ID="9"
+VERSION="9 (stretch)"
+ID=debian
+HOME_URL="https://www.debian.org/"
+SUPPORT_URL="https://www.debian.org/support"
+BUG_REPORT_URL="https://bugs.debian.org/"

@@ -1,0 +1,16 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    12                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: ikourkji <ikourkji@student.42.us.or>       +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/02/27 04:00:24 by ikourkji          #+#    #+#              #
+#    Updated: 2019/02/27 04:28:53 by ikourkji         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+#This might be a dirty trick, but what we're really trying to get is the
+#public-facing IP, which is difficult since we're behind NAT, so...
+curl ifconfig.me

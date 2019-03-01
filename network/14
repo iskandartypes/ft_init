@@ -1,0 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    14                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: ikourkji <ikourkji@student.42.us.or>       +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/02/27 04:13:25 by ikourkji          #+#    #+#              #
+#    Updated: 2019/02/27 04:14:02 by ikourkji         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+/etc/hosts
+#I like this one because it doesn't have a file ending.
+#https://en.wikipedia.org/wiki/Hosts_(file)

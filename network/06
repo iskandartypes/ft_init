@@ -1,0 +1,18 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    06                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: ikourkji <ikourkji@student.42.us.or>       +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/02/27 03:12:29 by ikourkji          #+#    #+#              #
+#    Updated: 2019/02/27 03:28:23 by ikourkji         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+/etc/resolv.conf
+
+#I don't really know what to deduce? That is where that file is, although,
+#technically, it's a symbolic link that gets passed around and edited a bunch
+#historically, because it can have multiple programs trying to edit it at once
+#It's not referenced by modern programs, but exists for backwards compatibility

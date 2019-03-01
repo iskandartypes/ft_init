@@ -1,0 +1,18 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    15                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: ikourkji <ikourkji@student.42.us.or>       +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/02/28 07:33:23 by ikourkji          #+#    #+#              #
+#    Updated: 2019/02/28 07:41:05 by ikourkji         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/sh
+
+#this kills the first running instance of 'tail,' but why you have so many?
+#you need `kill <pid>` or `kill %<job id>` (from jobs)
+
+kill $(pidof tail | awk '{print $1; exit}')

@@ -1,0 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    15                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: ikourkji <ikourkji@student.42.us.or>       +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/02/27 04:15:10 by ikourkji          #+#    #+#              #
+#    Updated: 2019/02/27 04:17:26 by ikourkji         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#can't actually do this (no permissions), but the command would be 
+sudo echo "46.19.122.85 intra.42.fr" >> /etc/hosts
+#since we have a local DNS table, we can reroute, you feel?

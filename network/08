@@ -1,0 +1,24 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    08                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: ikourkji <ikourkji@student.42.us.or>       +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/02/27 03:28:42 by ikourkji          #+#    #+#              #
+#    Updated: 2019/02/27 03:33:42 by ikourkji         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#This one is hard because I don't really know what these French folk mean by
+#"provider." `whois slash16.org` gives these name servers:
+Name Server: NS-1236.AWSDNS-26.ORG
+Name Server: NS-144.AWSDNS-18.COM
+Name Server: NS-686.AWSDNS-21.NET
+Name Server: NS-1989.AWSDNS-56.CO.UK
+#so (gauging by the aws) they use Amazon for that.
+#Their registrar and reseller is:
+Registrar: ONLINE SAS
+Reseller: ONLINE SAS
+#so that's as good a guess as any as to their "provider." Everything else is
+REDACTED FOR PRIVACY

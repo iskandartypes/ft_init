@@ -1,0 +1,20 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    03                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: ikourkji <ikourkji@student.42.us.or>       +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/02/28 06:21:35 by ikourkji          #+#    #+#              #
+#    Updated: 2019/02/28 06:25:57 by ikourkji         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#To make a hostname change permanent, you need to modify
+/etc/hostname
+#and also probably
+/etc/hosts
+#you then need to either restart the network or just restart the machine,
+#which is safer (sometimes the forced network restart breaks) and also easier
+#you need to restart for the change to take effect because the host name is set
+#at startup and then not really checked again because it don't change too often

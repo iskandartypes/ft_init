@@ -1,0 +1,16 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    04                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: ikourkji <ikourkji@student.42.us.or>       +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/02/27 03:12:14 by ikourkji          #+#    #+#              #
+#    Updated: 2019/02/27 03:12:16 by ikourkji         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+#returns default gateways for eth/wireless, also utun0 (Back to My Mac)
+#"Destination" is also grepped for table readability
+netstat -rn | grep "Destination\|default"

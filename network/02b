@@ -1,0 +1,22 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    02b                                                :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: ikourkji <ikourkji@student.42.us.or>       +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/02/27 03:11:58 by ikourkji          #+#    #+#              #
+#    Updated: 2019/02/27 03:12:00 by ikourkji         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+#gives subnet range
+IP=$(networksetup -getinfo Ethernet | awk '$1 == "IP" {print $3} ')
+MASK=$(networksetup -getinfo Ethernet | awk '$1 == "Subnet" {print $3} ')
+#IFS is internal field separator; <<< passes strings vs < file or << multiline
+IFS=. read -r i1 i2 i3 i4 <<< "$IP"
+IFS=. read -r m1 m2 m3 m4 <<< "$MASK"
+#from IP & MASK to IP | ~MASK
+printf "%d.%d.%d.%d to " "$((i1 & m1))" "$((i2 & m2))" "$((i3 & m3))" "$((i4 & m4))"
+printf "%d.%d.%d.%d\n" "$((i1 | (255 - m1)))"  "$((i2 | (255 - m2)))" "$((i3 | (255 - m3)))" "$((i4 | (255 - m4)))"

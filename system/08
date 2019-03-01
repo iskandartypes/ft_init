@@ -1,0 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    08                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: ikourkji <ikourkji@student.42.us.or>       +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/02/28 06:58:23 by ikourkji          #+#    #+#              #
+#    Updated: 2019/02/28 06:59:46 by ikourkji         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#the public RSAs of systems that can connect to the server via ssh are in
+.ssh/authorized_keys
+#and while the default filepath for `.ssh` is `~/.ssh`, it is often elsewhere.

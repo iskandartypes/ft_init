@@ -1,0 +1,24 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    11                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: ikourkji <ikourkji@student.42.us.or>       +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/02/27 03:50:25 by ikourkji          #+#    #+#              #
+#    Updated: 2019/02/27 03:54:27 by ikourkji         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#The first three hops with traceroute are:
+ 1  10.112.254.254 (10.112.254.254)  0.885 ms  2.196 ms  0.515 ms
+ 2  192.168.0.2 (192.168.0.2)  0.494 ms  0.461 ms  0.449 ms
+ 3  nat (10.90.1.11)  0.226 ms  0.255 ms  0.322 ms
+#the third is the first one that's named, the first one that doesn't quit 
+#immediately if you try to access it from a browser, and the first one that's
+#past our home IP range (192.168....), so it's probably our link with the 
+#outside world. 
+
+#"nat" stands for "network address translation," and is used to take all of
+#our crazy subnetted-and-enterprised IP addresses and make them presentable
+#to the internet at large. Its IP address at time of execution was 10.90.1.11.
